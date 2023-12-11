@@ -1,0 +1,144 @@
+Execution stack:
+Ref(int) v;Alloc(v, 20);Ref(Ref(int)) a;Alloc(a, v);print(rH(v));print(rH(rH(a)));
+Symbol table:
+
+Out:
+
+File table:
+
+Heap:
+
+
+
+Execution stack:
+Alloc(v, 20);Ref(Ref(int)) a;Alloc(a, v);print(rH(v));print(rH(rH(a)));Ref(int) v;
+Symbol table:
+
+Out:
+
+File table:
+
+Heap:
+
+
+
+Execution stack:
+Alloc(v, 20);Ref(Ref(int)) a;Alloc(a, v);print(rH(v));print(rH(rH(a)));
+Symbol table:
+v=Ref(0, int);
+Out:
+
+File table:
+
+Heap:
+
+
+
+Execution stack:
+Ref(Ref(int)) a;Alloc(a, v);print(rH(v));print(rH(rH(a)));Alloc(v, 20);
+Symbol table:
+v=Ref(0, int);
+Out:
+
+File table:
+
+Heap:
+
+
+
+Execution stack:
+Ref(Ref(int)) a;Alloc(a, v);print(rH(v));print(rH(rH(a)));
+Symbol table:
+v=Ref(1, int);
+Out:
+
+File table:
+
+Heap:
+1=20;
+
+
+Execution stack:
+Alloc(a, v);print(rH(v));print(rH(rH(a)));Ref(Ref(int)) a;
+Symbol table:
+v=Ref(1, int);
+Out:
+
+File table:
+
+Heap:
+1=20;
+
+
+Execution stack:
+Alloc(a, v);print(rH(v));print(rH(rH(a)));
+Symbol table:
+a=Ref(0, Ref(int));v=Ref(1, int);
+Out:
+
+File table:
+
+Heap:
+1=20;
+
+
+Execution stack:
+print(rH(v));print(rH(rH(a)));Alloc(a, v);
+Symbol table:
+a=Ref(0, Ref(int));v=Ref(1, int);
+Out:
+
+File table:
+
+Heap:
+1=20;
+
+
+Execution stack:
+print(rH(v));print(rH(rH(a)));
+Symbol table:
+a=Ref(2, Ref(int));v=Ref(1, int);
+Out:
+
+File table:
+
+Heap:
+1=20;2=Ref(1, int);
+
+
+Execution stack:
+print(rH(rH(a)));print(rH(v));
+Symbol table:
+a=Ref(2, Ref(int));v=Ref(1, int);
+Out:
+
+File table:
+
+Heap:
+1=20;2=Ref(1, int);
+
+
+Execution stack:
+print(rH(rH(a)));
+Symbol table:
+a=Ref(2, Ref(int));v=Ref(1, int);
+Out:
+20;
+File table:
+
+Heap:
+1=20;2=Ref(1, int);
+
+
+Execution stack:
+
+Symbol table:
+a=Ref(2, Ref(int));v=Ref(1, int);
+Out:
+20;20;
+File table:
+
+Heap:
+1=20;2=Ref(1, int);
+
+
